@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #8e8e8e;
+  font-family: Roboto, arial;
+}
+
+.wrapper-1{
+  display: flex;
+}
+
+.poster img{
+  width: 120px;
+  height: 180px;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.overview h5{
+  position: relative;
+  left: 75px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.overview p{
+  font-size: 12px;
+  position: relative;
+  left: 20px;
+}
+
+.wrapper-2{
+  display: block;
+}
+
+.cast{
+  margin: 20px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 0px;
+}
+
+
+.actor{
+  width: 60px;
+  height: 65px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.budget p, .revenue p, .companies p, .genre p, .title p, .languages p{
+  margin-left: 10px;
+}
+
+.date p{
+  color: #000000;
+  font-size: 12.5px;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  transform: rotate(90deg);
+  left: 110px;
+  top: 30px;
+}
+
+.companies p{
+  font-size: 15px;
+}

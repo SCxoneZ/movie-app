@@ -1,0 +1,166 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #afafaf;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.input-box{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.input-search{
+  width: 180px;
+  height: 25px;
+  margin: 10px;
+  position: relative;
+  left: 25px;
+  border-radius: 20px;
+  padding: 4px;
+  padding-left: 5px;
+  text-align: center;
+  background: white;
+  border: none;
+  transition: .3s;
+}
+
+.btn-search{
+  width: 85px;
+  height: 33px;
+  border-radius: 125px;
+  border: none;
+  background-color: #cae6ed;
+  position: relative;
+  right: 25px;
+  transition: .3s;
+}
+
+.input-search:focus{
+  outline: none;
+}
+
+.btn-search:active{
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.movies{
+  display: block;
+}
+
+.movies{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.cards{
+  width: px;
+  height: 480px;
+  background: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.poster{
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.progress{
+  position: absolute;
+  top: 400px;
+  left: 10px;
+}
+
+.title h4{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 12.5px;
+}
+
+.content{
+  padding: 10px;
+}
+
+.date{
+  margin-right: 10px;
+}
+
+.date p{
+  font-size: 15px;
+  color: grey;
+  text-align: center;
+}
+
+.btn-detail{
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+  left: 60px;
+  top: 19px;
+  border: 1.5px solid #c0e7e7;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in;
+}
+
+.btn-detail:hover{
+  background-color: #c0e7e7;
+  color: white;
+}
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 50px;
+  --fg: #7eacf1;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, black 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+  outline: none;
+  border: none;
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+
+/* demo */
+
+
