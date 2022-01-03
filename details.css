@@ -47,12 +47,33 @@ body{
   left: 0px;
 }
 
-
-.actor{
+.actor-wrapper{
   width: 60px;
-  height: 65px;
+  height: 100px;
+  background: #fff;
   border-radius: 10px;
   margin: 5px;
+  overflow: hidden;
+}
+
+.actor{
+  width: 100%;
+  height: 65px;
+}
+
+.real-name{
+  font-weight: bold;
+  font-size: 6px;
+  margin: 0;
+}
+
+.character-name{
+  font-size: 6px;
+  margin: 0;
+}
+
+.actor-wrapper p{
+  text-align: center;
 }
 
 .bold{
